@@ -5,10 +5,10 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
 import openpyxl
 
-class LoginScreen(GridLayout):
+class Screen1(GridLayout):
 
     def __init__(self, **kwargs):
-        super(LoginScreen, self).__init__(**kwargs)
+        super(Screen1, self).__init__(**kwargs)
         self.cols = 1
 
         self.add_widget(Label(text='File Path'))
@@ -46,7 +46,7 @@ class LoginScreen(GridLayout):
 class MyApp(App):
 
     def build(self):
-        return LoginScreen()
+        return Screen1()
 
 
 if __name__ == '__main__':
